@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinle-page</title>
+    <link rel="icon" type="image" href="img/Smile.jpg">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            height: 1in;
+            width: 100%;
+            background-color: orangered;
+            line-height: 1in;
+        }
+
+        nav h1 {
+            font-size: 50px;
+            float: left;
+            margin-left: 1.5cm;
+            color: white;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            float: right;
+            margin-right: 1cm;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+
+        /* --------------------------------------------------------------------------------------------------- */
+
+        #s1 {
+            height: 90vh;
+            width: 100%;
+            background-image: url('img/b2.jpg');
+            background-size: cover;
+            opacity: 1;
+        }
+
+        .s1-mater {
+            height: 90vh;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+
+        .s1-mater h1 {
+            font-size: 70px;
+            padding-top: 1.5in;
+        }
+
+        .s1-mater p {
+            font-size: 20px;
+            color: white;
+            opacity: 1;
+        }
+
+        .s1-mater button {
+            height: 0.8in;
+            background-color: orangered;
+            line-height: 0.8in;
+            width: 2in;
+            font-size: 1.5em;
+            text-align: center;
+            color: white;
+            border: none;
+        }
+
+        .s1-mater button:hover {
+            border-radius: 40px;
+            background-color: blueviolet;
+        }
+
+        /* --------------------------------------------------------------------------------------------------- */
+        #s2 {
+            height: 2.2in;
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            padding-top: 1in;
+        }
+
+        #s2 h1 {
+            font-size: 40px;
+            color: black;
+            border-bottom: 1px solid orange;
+            width: 30%;
+            text-align: center;
+            margin: auto;
+        }
+
+        p {
+            font-size: 21px;
+            line-height: 30px;
+            opacity: 0.5;
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        #s3 {
+            height: 6in;
+            width: 93%;
+            margin-left: 5%;
+            text-align: center;
+        }
+
+        #s3-mater {
+            height: 4.5in;
+            width: 47%;
+        }
+
+        #s3 .s3l {
+            height: 4.5in;
+            width: 47%;
+            float: left;
+        }
+
+        .s3l p {
+            text-align: left;
+        }
+
+        .s3l h1 {
+            font-size: 32px;
+        }
+
+        #s3 .s3r {
+            height: 4.5in;
+            width: 50%;
+            float: right;
+            background-image: url('https://html.design/demo/boocic/images/aboutimg.png');
+            background-size: cover;
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 30px;
+        }
+
+        #s3 button {
+            height: 0.8in;
+            background-color: black;
+            line-height: 0.8in;
+            width: 2in;
+            font-size: 1.5em;
+            text-align: center;
+            color: white;
+            border: none;
+            margin-top: 0.5in;
+        }
+
+        #s3 button:hover {
+            border-radius: 40px;
+            background-color: blueviolet;
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        #s4 {
+            height: auto;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 1cm;
+            margin-top: 0.5in;
+        }
+
+        #s4 h1 {
+            font-size: 40px;
+            color: black;
+            border-bottom: 1px solid orange;
+            width: 18%;
+            text-align: center;
+            margin: auto;
+        }
+
+        #s4 button {
+            height: 0.8in;
+            background-color: black;
+            line-height: 0.8in;
+            width: 2in;
+            font-size: 1.5em;
+            text-align: center;
+            color: white;
+            border: none;
+        }
+
+        #s4 button:hover {
+            border-radius: 40px;
+            background-color: blueviolet;
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        #s5 {
+            height: 8in;
+            width: 100%;
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+
+        #s5 h1 {
+            font-size: 40px;
+            color: tomato;
+            border-bottom: 1px solid orange;
+            width: 15%;
+            text-align: center;
+            margin: auto;
+            padding-top: 2cm;
+        }
+
+        #s5 ul li {
+            display: inline-block;
+            margin-left: 0.5cm;
+            margin-top: 1.5cm;
+            /* height: 50px; */
+            box-sizing: border-box;
+        }
+
+        #s5 img {
+            /* width: 100%; */
+            border-radius: 20px;
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        #s6 {
+            height: auto;
+            width: 100%;
+            margin-top: 0.5in;
+            padding: 0.3in 0;
+            text-align: center;
+        }
+
+        #s6 h1 {
+            font-size: 40px;
+            color: black;
+            border-bottom: 2px solid orange;
+            width: 15%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .pl {
+            padding: 1cm 0
+        }
+
+        .k {
+            height: 11in;
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .l {
+            height: 5.7in;
+            width: 49%;
+            float: left;
+            text-align: left;
+        }
+
+        #lo {
+            width: 100%;
+            height: 3.2in;
+            background-image: url('img/bl-2.jpg');
+            background-repeat: no-repeat;
+        }
+
+        .in {
+            background-color: orangered;
+            color: white;
+            height: 1cm;
+            width: 3cm;
+            line-height: 1cm;
+            padding: 3px;
+        }
+
+        #ve {
+            width: 100%;
+            height: 3.2in;
+            background-image: url('img/bl-1.jpg');
+            background-repeat: no-repeat;
+        }
+
+        .x {
+            font-size: 18px;
+            padding: 0;
+        }
+
+        .m {
+            height: 5.7in;
+            width: 49%;
+            margin-left: 51%;
+            text-align: left;
+        }
+
+        .m p {
+            font-size: 18px;
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        #s7 {
+            height: auto;
+            width: 100%;
+            margin-top: 0.5in;
+            background-color: black;
+            padding: 2cm 0;
+            opacity: 0.8;
+        }
+
+        #s7 h1 {
+            font-size: 35px;
+            color: white;
+            border-bottom: 1px solid white;
+            width: 15%;
+            text-align: center;
+            margin: auto;
+        }
+
+        #s7 form {
+            background-color: white;
+            margin: auto;
+            border: 2px solid white;
+            width: 40%;
+            margin: auto;
+            padding: 1cm;
+            text-align: center;
+        }
+
+        input {
+            border: 1px solid black;
+            padding: 0.5cm 0;
+            width: 100%;
+            padding-left: 0.5cm;
+        }
+
+        textarea {
+            padding: 0.5cm 0;
+            width: 100%;
+            padding-left: 0.5cm;
+        }
+
+        #s7 button {
+            height: 0.4in;
+            background-color: rgb(0, 0, 0);
+            line-height: 0.4in;
+            width: 1.2in;
+            font-size: 1.5em;
+            text-align: center;
+            color: white;
+            border: none;
+        }
+
+        #s7 button:hover {
+            border-radius: 40px;
+            background-color: orange;
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        footer {
+            height: auto;
+            width: 100%;
+            text-align: center;
+        }
+
+        #s8 {
+            height: 1.5in;
+            width: 90%;
+            color: white;
+            background-color: orangered;
+            padding: 5%;
+        }
+
+        .e1 {
+            height: auto;
+            width: 2in;
+            float: left;
+            text-align: left;
+        }
+
+        .e1 h1 {
+            font-size: 25px;
+        }
+
+        .e2 {
+            height: auto;
+            width: 2in;
+            float: left;
+            text-align: left;
+        }
+
+        .e2 h1 {
+            font-size: 25px;
+        }
+
+        .e3 {
+            height: auto;
+            width: 2in;
+            float: left;
+            text-align: left;
+        }
+
+        .e3 h1 {
+            font-size: 25px;
+        }
+
+        .e4 {
+            height: auto;
+            width: 2in;
+            float: left;
+            text-align: left;
+        }
+
+        .e4 h1 {
+            font-size: 25px;
+        }
+
+        .e5 {
+            height: auto;
+            width: auto;
+            margin-left: 5in;
+            text-align: left;
+        }
+
+        .e5 h1 {
+            font-size: 25px;
+        }
+
+        .e5 input {
+            padding: 0.3cm;
+            width: 40%;
+            border: none;
+        }
+
+        .e5 button {
+            height: 0.6in;
+            background-color: black;
+            line-height: 0.6in;
+            width: 1.5in;
+            font-size: 1.5em;
+            text-align: center;
+            color: orangered;
+            border: none;
+        }
+
+        .e5 button:hover {
+            background-color: white;
+        }
+
+        #s9 {
+            height: 0.5in;
+            width: 100%;
+            padding-top: 1cm;
+        }
+
+        #s9 h3 {
+            opacity: 0.8;
+        }
+
+        #l:hover {
+            color: orange;
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+    </style>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+</head>
+
+<body>
+    <header>
+        <nav id="home">
+
+            <h1> <b>Boocic </b></h1>
+
+            <a><i class="zmdi zmdi-search-for"></i></a>
+            <a href="#s7">Contact us</a>
+            <a href="#s6">Blog</a>
+            <a href="#s4">Screenshot</a>
+            <a href="#s5">Service</a>
+            <a href="#s2">About</a>
+            <a href="#home">Home</a>
+
+        </nav>
+    </header>
+    <!-- ------------------------------------------------------------------------ -->
+    <main>
+        <section id="s1">
+            <section class="s1-mater">
+                <h1>Basic template</h1>
+                <br>
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a
+                    <br> page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-
+                    <br>less normal distribution of letters, as opposed to using 'Content here, content here',
+                    <br> making it look like readable English. Many desktop publishing packages and
+                </p>
+                <br><br><br>
+                <button> READ MORE</button>
+            </section>
+        </section>
+        <!-- -------------------------------------------------------------------------------------- -->
+        <section id="s2">
+
+            <h1>About Informations</h1>
+            <br><br>
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point
+                <br>
+                of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, a
+            </p>
+        </section>
+        <!-- -------------------------------------------------------------------------------------- -->
+        <section id="s3">
+            <section class="s3-mater">
+                <section class="s3l">
+                    <h1>DISTRACTED BY THE READABLE</h1>
+                    <br>
+                    <p>
+                        It is a long established fact that a reader will be distracted by
+                        <br> the readable content of a page when looking at its layout. The
+                        <br> point of using Lorem Ipsum is that it has a more-or-less
+                        <br> normal distribution of letters, aIt is a long established fact that
+                        <br> a reader will be distracted by the readable content of a page
+                        <br> when looking at its layout. The point of using Lorem Ipsum is
+                        <br> that it has a more-or-less normal distribution of letters, aIt is a
+                        <br> long established fact that a reader will be distracted by the
+                        <br> readable content of a page when looking at its layout. The
+                        <br> point of using Lorem Ipsum is that it has a more-or-less
+                        <br> normal distribution of lettersdistracted by the readable
+                        <br> distracted by the readable , a
+                    </p>
+                </section>
+                <section class="s3r"></section>
+            </section>
+            <button> READ MORE </button>
+        </section>
+        <!-- -------------------------------------------------------------------------------------- -->
+        <section id="s4">
+            <h1>Screenshot</h1>
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of
+                <br> using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+            </p>
+            <br><br><br>
+            <img src="https://html.design/demo/boocic/images/banner.png" alt=" computer img">
+            <br>
+            <button>DOWNLODE</button>
+        </section>
+        <!-- -------------------------------------------------------------------------------------- -->
+        <section id="s5">
+            <h1>Services</h1>
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of
+                <br> using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+            </p>
+            <ul>
+                <li><img src="https://html.design/demo/boocic/images/1.jpg" alt=""></li>
+                <li><img src="https://html.design/demo/boocic/images/2.jpg" alt=""></li>
+                <li><img src="https://html.design/demo/boocic/images/3.jpg" alt=""></li>
+            </ul>
+            <ul>
+                <li><img src="https://html.design/demo/boocic/images/4.jpg" alt=""></li>
+                <li><img src="https://html.design/demo/boocic/images/5.jpg" alt=""></li>
+                <li><img src="https://html.design/demo/boocic/images/6.jpg" alt=""></li>
+            </ul>
+        </section>
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <section id="s6">
+            <h1>Our Blog</h1>
+            <p class="pl">Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+            <section class="k">
+
+                <section class="l">
+                    <div id="lo">
+                        <div class="in">
+                            10 August 2019
+                        </div>
+                    </div>
+                    <section>
+                        <section style="float:left;">
+                            <font color="orangered">Post By : Travel Agency</font>
+                        </section>
+                        <section style="float:right;">
+                            <font color="orangered">05</font>Like <font color="orangered">06</font> Comment</font>
+                        </section>
+                    </section>
+                    <br><br>
+                    <h2>London Amazing Tour</h2>
+                    <p class="x">It is a long established fact that a reader will be distracted by the
+                        <br> readable content of a page when looking at its layout. The point of
+                        <br> using Lorem Ipsum is that it has a more-or-less normal distribution
+                        <br> of letters, as opposed to using 'Content here, content here', making
+                        <br> it look like readable English. Many desktop publishing packages and
+                        <br> web
+                    </p>
+                </section>
+                <!-- ----------------------------------------------- -->
+                <section class="m">
+                    <div id="ve">
+                        <div class="in">
+                            10 August 2019
+                        </div>
+                    </div>
+                    <section>
+                        <section style="float:left;">
+                            <font color="orangered">Post By : Travel Agency</font>
+                        </section>
+                        <section style="float:right;">
+                            <font color="orangered">05</font>Like <font color="orangered">06</font> Comment</font>
+                        </section>
+                    </section>
+                    <br><br>
+                    <h2>London Amazing Tour</h2>
+                    <p class="x">It is a long established fact that a reader will be distracted by the
+                        <br> readable content of a page when looking at its layout. The point of
+                        <br> using Lorem Ipsum is that it has a more-or-less normal distribution
+                        <br> of letters, as opposed to using 'Content here, content here', making
+                        <br> it look like readable English. Many desktop publishing packages and
+                        <br> web
+                    </p>
+                </section>
+                <br>
+                <section class="l">
+                    <div id="lo">
+                        <div class="in">
+                            10 August 2019
+                        </div>
+                    </div>
+                    <section>
+                        <section style="float:left;">
+                            <font color="orangered">Post By : Travel Agency</font>
+                        </section>
+                        <section style="float:right;">
+                            <font color="orangered">05</font>Like <font color="orangered">06</font> Comment</font>
+                        </section>
+                    </section>
+                    <br><br>
+                    <h2>London Amazing Tour</h2>
+                    <p class="x">It is a long established fact that a reader will be distracted by the
+                        <br> readable content of a page when looking at its layout. The point of
+                        <br> using Lorem Ipsum is that it has a more-or-less normal distribution
+                        <br> of letters, as opposed to using 'Content here, content here', making
+                        <br> it look like readable English. Many desktop publishing packages and
+                        <br> web
+                    </p>
+                </section>
+                <!-- ----------------------------------------------- -->
+                <section class="m">
+                    <div id="ve">
+                        <div class="in">
+                            10 August 2019
+                        </div>
+                    </div>
+                    <section>
+                        <section style="float:left;">
+                            <font color="orangered">Post By : Travel Agency</font>
+                        </section>
+                        <section style="float:right;">
+                            <font color="orangered">05</font>Like <font color="orangered">06</font> Comment</font>
+                        </section>
+                    </section>
+                    <br><br>
+                    <h2>London Amazing Tour</h2>
+                    <p class="x">It is a long established fact that a reader will be distracted by the
+                        <br> readable content of a page when looking at its layout. The point of
+                        <br> using Lorem Ipsum is that it has a more-or-less normal distribution
+                        <br> of letters, as opposed to using 'Content here, content here', making
+                        <br> it look like readable English. Many desktop publishing packages and
+                        <br> web
+                    </p>
+                </section>
+
+            </section>
+        </section>
+        <!-- --------------------------------------------------------------------------------------- -->
+
+        <section id="s7">
+            <h1>Contact Us</h1>
+            <br><br>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <br><br>
+                <input type="text" placeholder="Phone">
+                <br><br>
+                <input type="text" placeholder="Email">
+                <br><br>
+                <textarea name="" placeholder="Message" cols="30" rows="3"></textarea>
+                <br><br>
+                <button>Send</button>
+            </form>
+        </section>
+        <!-- --------------------------------------------------------------------------------------- -->
+
+        <footer>
+            <section id="s8">
+                <section class="e1">
+                    <h1>Address</h1>
+                    <br>
+                    <h3><img src="img/3.png"><i>Locations</i></h3>
+                </section>
+                <section class="e2">
+                    <h1>Menus</h1>
+                    <br>
+                    <h3><img src="img/2.png"><i>Locations</i></h3>
+                </section>
+                <section class="e3">
+                    <h1>Useful
+                        <br>
+                        Linkes
+                    </h1>
+                    <br>
+                    <h3><img src="img/1.png"><i>Locations</i></h3>
+                </section>
+                <section class="e4">
+                    <h1>Social <br> Media</h1>
+                    <br><br>
+                    <section>
+                        <i class="zmdi zmdi-facebook" style="font-size: xx-large;"></i>
+                        &nbsp;&nbsp;
+                        <i class="zmdi zmdi-twitter-box" style="font-size: xx-large;"></i>
+                        &nbsp;&nbsp;
+                        <i class="zmdi zmdi-linkedin" style="font-size: xx-large;"></i>
+                        &nbsp;&nbsp;
+                        <i class="zmdi zmdi-filter-center-focus" style="font-size: xx-large;"></i>
+                    </section>
+                </section>
+                <section class="e5">
+                    <h1>Newsletter</h1>
+                    <br>
+                    <input type="text" placeholder="Enter your email">
+                    <br><br>
+                    <button>Subscribe</button>
+                </section>
+            </section>
+            <section id="s9">
+                <h3>Copyright 2019 All Right Reserved By <span id="l">Free html Templates </span></h3>
+            </section>
+        </footer>
+        <!-- --------------------------------------------------------------------------------------- -->
+    </main>
+</body>
+
+</html>
